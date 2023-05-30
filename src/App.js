@@ -1,6 +1,7 @@
 
 import './App.css';
 import Films from './component/Films';
+import Footer from './component/Footer';
 import Navigation from './component/Navigation';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
      <Navigation/>
      <Films/>
+     <Footer/>
     </div>
   );
 }
