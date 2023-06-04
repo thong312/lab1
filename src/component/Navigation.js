@@ -1,17 +1,24 @@
-import React, { Component } from 'react'
-export default class Navigation extends Component {
-  render() {
-    return (
-      <div>
-        <nav>
-            <ul className='header'>
-                <li><a className='active' href='#home'>Home</a></li>
-                <li><a href='#news'>News</a></li>
-                <li><a href='#about'>Abount</a></li>
-                <li><a href='#contact'>Contact</a></li>
-            </ul>
-        </nav>
-      </div>
-    )
-  }
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { Navbar, NavItem, Icon } from 'react-materialize'
+export default function Navigation() {
+  return (
+  <Navbar className='menu'
+    alignLinks="right"
+    brand={<span className="brand-logo">Fims</span>}
+    id="mobile-nav"
+    menuIcon={<Icon>menu</Icon>}
+    >
+    <ul>
+      <li><Link to='/'><Icon left>home</Icon>Home</Link>
+      </li>
+      <li to='/about'><Link to='/about'><Icon left>info_outline</Icon>About</Link>
+      </li>
+      <li to='/news'><Link to='/news'><Icon left>dvr</Icon>News</Link>
+      </li>
+      <li to='/contact'><Link to='/contact'><Icon left>contacts</Icon>Contact</Link>
+      </li>
+    </ul>
+  </Navbar>
+  )
 }

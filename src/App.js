@@ -11,7 +11,7 @@ import Detail from './component/detail';
 function App() {
   return (
     <div className="App">
-      <Navigation />
+      < Navigation/>
       <Routes>
         <Route path='/' element={<Films />}>
         </Route>
