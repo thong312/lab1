@@ -30,13 +30,13 @@ export default function Film() {
             <Container>
                 <Row className="film-row">
                     {Films.map((film) => (
-                        <Col key={film.id} xl={3} l={4} m={6} s={12}>
+                        <Col key={film.id}>
                             <div className="film-card-wrapper">
                                 <Card
                                     className="film-card"
                                     header={
                                         <div className="card-image">
-                                            <img className="pic" src={film.img} alt="" style={{ width: '100%', height: 'auto' }} />
+                                            <img className="pic" src={film.img} alt="" style={{ width: '300px', height: '250px' }} />
                                         </div>
                                     }
                                     title={film.title}
