@@ -44,8 +44,8 @@
 font-size: xx-large;
 }
 .pict{
-  width:1000px;
-  height:500px;
+  width:200px;
+  height:auto;
 }
 .menu{
   background-color: #61dafb;
@@ -96,4 +96,10 @@ font-size: xx-large;
   transform: translate(-50%, -50%);
   position: absolute;
   color:white
+}
+.Summary{
+  font-style: italic;
+}
+.news-content{
+  font-style: italic;
 }

@@ -10,7 +10,7 @@ export default function Contact() {
 
         <Container>
             <div className='form-container'>
-                <h3>Contact us</h3>
+                <h2>Contact us</h2>
                 <Card>
                     <form onSubmit={handleSubmit}>
                         <TextInput id="TextInput-38" label="Your Name" />

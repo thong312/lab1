@@ -25,6 +25,7 @@ export default function Detail() {
 
           <h5>Premiere year: {movie.Year}</h5>
           <h5>Nation: {movie.Nation}</h5>
+          <div className='Summary'><h5>Summary: {movie.summ}</h5></div>
         </div>
       </div>
     </div>

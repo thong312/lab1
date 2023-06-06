@@ -5,7 +5,7 @@ export default function About() {
     return (
         <Container>
             <div className='about-container'>
-                <h3>About Us</h3>
+                <h2>About Us</h2>
                 <Collapsible accordion>
                     <CollapsibleItem header={<span><Icon>group</Icon> Our website</span>}>
                         <p>
