@@ -1,18 +1,18 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import { Container, Icon, Select, TextInput, Textarea, Button, Card } from 'react-materialize';
-
+import { ThemeContext } from './ThemeContext';
 export default function Contact() {
     const handleSubmit = (event) => {
         event.preventDefault();
     };
-
+    const { theme2, theme } = useContext(ThemeContext);
     return (
 
         <Container>
-            <div className='form-container'>
+            <div className='form-container' style={{ backgroundColor: theme.backgroundColor, color: theme.color }}>
                 <h2>Contact us</h2>
                 <Card>
-                    <form onSubmit={handleSubmit}>
+                    <form onSubmit={handleSubmit} style={{ backgroundColor: theme2.backgroundColor, color: theme2.color }} >
                         <TextInput id="TextInput-38" label="Your Name" />
                         <TextInput id="TextInput-39" label="Your Phone" />
                         <TextInput id="TextInput-41" label="Email" validate />

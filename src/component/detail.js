@@ -3,17 +3,18 @@ import { Films } from './share/ListOfFilms';
 import { useParams } from 'react-router-dom';
 import { Icon } from 'react-materialize';
 import ModelCase from './ModelCase';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
+import { ThemeContext } from './ThemeContext';
 export default function Detail() {
   const [isOpen, setIsOpen] = useState(false);
-
+  const { theme3, theme } = useContext(ThemeContext);
   const { id } = useParams();
   const movie = Films.find((obj) => obj.id == id);
 
   return (
-    <div className='container'>
-      <div className='card'>
-        <div className='badge white black-text'>{movie.title}</div>
+    <div className='container' >
+      <div className='card' style={{ backgroundColor: theme.backgroundColor, color: theme.color }}>
+        <div className='movie-title' style={{ backgroundColor: theme.backgroundColor, color: theme.color }} ><h3>{movie.title}</h3></div>
         <div className='card-image'>
           <img className='pict' src={`../${movie.img}`} alt='' />
           {isOpen && <ModelCase setIsOpen={setIsOpen} movie={movie} />}
@@ -21,7 +22,7 @@ export default function Detail() {
             <Icon>ondemand_video</Icon>
           </a>
         </div>
-        <div className='card-content-detail'>
+        <div className='card-content-detail' style={{ backgroundColor: theme.backgroundColor, color: theme.color }}>
 
           <h5>Premiere year: {movie.Year}</h5>
           <h5>Nation: {movie.Nation}</h5>
