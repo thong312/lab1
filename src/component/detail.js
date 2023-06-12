@@ -24,9 +24,9 @@ export default function Detail() {
         </div>
         <div className='card-content-detail' style={{ backgroundColor: theme.backgroundColor, color: theme.color }}>
 
-          <h5>Premiere year: {movie.Year}</h5>
-          <h5>Nation: {movie.Nation}</h5>
-          <div className='Summary'><h5>Summary: {movie.summ}</h5></div>
+          <h5><Icon>forward</Icon>  Premiere year: {movie.Year}</h5>
+          <h5><Icon>language</Icon>  Nation: {movie.Nation}</h5>
+          <div className='Summary'><h5><Icon>subdirectory_arrow_right</Icon> Summary: {movie.summ}</h5></div>
         </div>
       </div>
     </div>

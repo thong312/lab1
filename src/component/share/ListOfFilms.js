@@ -25,7 +25,7 @@ export const Films = [
         , summ: 'Once the booming home of pharmaceutical giant Umbrella Corporation, Raccoon City is now a dying Midwestern town. The companys exodus left the city a wasteland... with great evil brewing below the surface. When that evil is unleashed, a group of survivors must work together to uncover the truth behind Umbrella and make it through the night.'
     },
     {
-        id: 6, title: 'Tenets 2020 ', Year: '2023', img: 'picture/1/fix.jpg', Nation: 'America'
+        id: 6, title: 'Tenets 2020 ', Year: '2020', img: 'picture/1/fix.jpg', Nation: 'America'
         , clip: 'https://www.youtube.com/embed/L3pk_TBkihU'
         , summ: 'Armed with only one word, Tenet, and fighting for the survival of the entire world, a Protagonist journeys through a twilight world of international espionage on a mission that will unfold in something beyond real time.'
     },

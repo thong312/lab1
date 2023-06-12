@@ -9,7 +9,7 @@ export default function ModelCase({ setIsOpen, movie }) {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen /></p>
                 </div>
                 <div className="modal-footer">
-                    <a className="modal-close red-text">Close</a>
+                    <h4 className="modal-close white-text">Close</h4>
                 </div>
             </div>
 

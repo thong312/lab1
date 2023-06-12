@@ -9,7 +9,7 @@ export default function News() {
     };
 
     return (
-        <div className="news-container">
+        <div className="container">
             <h2>Movie News</h2>
 
             <ul className="tabs" style={{ backgroundColor: theme.backgroundColor, color: theme.color }}>
@@ -60,7 +60,7 @@ export default function News() {
                         <h3>Studio Ghibli to Release Hayao Miyazaki’s Final Film ‘How Do You Live?’ With No Trailer, No Promotional Marketing</h3>
                         <h4>In a very Ghibli-esque move, the legendary anime house is asking fans to go see the film with no preconceptions: "Deep down, I think this
                             is what moviegoers latently desire," says producer Toshio Suzuki.</h4>
-                        <img src='picture/1/news2.jpg' alt='' />
+                        <img className='ghibli-0' src='picture/1/news2.jpg' alt='' />
                         <div className='news-content'>
                             <h5>Japan’s Studio Ghibli says it will release no trailer and no promotional materials whatsoever ahead of the release of Hayao Miyazaki’s final
                                 film, How Do You Live?
@@ -83,7 +83,7 @@ export default function News() {
                             <h5> Studio Ghibli’s only poster for How Do You Live? is below.</h5>
                         </div>
                         <div className='news-pic'>
-                            <img src='picture/1/news2,5.jpg' alt='' />
+                            <img className='ghibli' src='picture/1/news2,5.jpg' alt='' />
                         </div>
 
 

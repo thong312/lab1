@@ -1,14 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Icon, CardTitle, Row, Col, Card, Container } from 'react-materialize';
+import { Row, Col, Card, Container } from 'react-materialize';
 import { Films } from './share/ListOfFilms';
-
-
 export default function Film() {
-
     return (
         <div className="container-fluid">
-
             <div className="title">
                 <h1>LIST OF FILMS</h1>
             </div>
